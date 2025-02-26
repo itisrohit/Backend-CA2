@@ -4,7 +4,7 @@ const app = express()
 
 app.use(express.json())
 
-let data = [{user: "rohit", Job: "Software guy"}, {user: "rahul", Job: "Software Person"}]
+let data = [{user: "rohit", age: 23, email: "123@email.com"}, {user: "rahul", age: 22, email: "123@eemail.com"}]
 
 
 app.get('/:user', (req,res)=>{
