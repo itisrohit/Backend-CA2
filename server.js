@@ -6,6 +6,9 @@ app.use(express.json())
 
 let data = [{user: "rohit", age: 23, email: "123@email.com"}, {user: "rahul", age: 22, email: "123@eemail.com"}]
 
+app.get('/', (req, res)=>{
+    res.send("Api is working")
+})
 
 app.get('/:user', (req,res)=>{
     try {
